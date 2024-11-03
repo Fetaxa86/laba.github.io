@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #b3b3b3;
+}
+
+.tabs {
+    max-width: 100%;
+    display: flex;
+    list-style: none;
+    background: #333;
+    border-radius: 30px;
+    margin-top: 20px;
+    height: 100px;
+    align-items: center;
+    gap: 10px;
+    overflow: scroll;
+}
+
+.tabs li {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.tabs li:first-child {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.tabs li:last-child {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.tabs a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.tabs li:hover {
+    background: #575757;
+}
+
+.content {
+    padding: 20px;
+    display: none; /* Скрыть контент по умолчанию */
+    animation: fadeIn 0.5s; /* Анимация появления */
+}
+
+.active {
+    display: block; /* Показать активный контент */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.image_of_gadget {
+    object-fit: cover;
+    width: 75%;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+p {
+    font-size: 20px;
+    margin: 20px 0;
+    line-height: 25px;
+}
+
+@media screen and (max-width: 600px) {
+    .gadget_el {
+        font-size: 15px;
+    }
+}

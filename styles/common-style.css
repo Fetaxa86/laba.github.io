@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.header-box {
+    width: 100%;
+    background: #1e1e1e;
+    text-align: center;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-box h1 {
+    color: #ffffff;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.list-item {
+    display: inline;
+    margin: 0 15px;
+}
+
+.item-text {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+@media (width < 1250px) {
+    .header-box {
+        height: 145px;
+    }
+}
