@@ -24,6 +24,7 @@ body {
     transition: all .5s;
     font-size: 20px;
     cursor: pointer;
+    padding: 0 20px;
 }
 
 .tabs li:first-child {
@@ -64,7 +65,7 @@ body {
 
 .image_of_mem {
     object-fit: cover;
-    width: 35%;
+    width: 50%;
     margin-top: 20px;
 }
 
@@ -82,13 +83,4 @@ p {
     .lab_el {
         font-size: 15px;
     }
-}
-
-.mute-button {
-    width: 30px;
-    height: auto;
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
 }

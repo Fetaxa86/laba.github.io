@@ -18,10 +18,10 @@ document.getElementById("mute-icon").addEventListener("click", function() {
     var music = document.getElementById("background-music");
     if (music.muted) {
         music.muted = false;
-        this.src = "img/mute2.png";
+        this.src = "img/unmute2.png";
     } else {
         music.muted = true;
-        this.src = "img/unmute2.png";
+        this.src = "img/mute2.png";
     }
 });
 
